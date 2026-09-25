@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rostro Glow - Servicios M&eacute;dico Est&eacute;ticos | Dra. Paola P&eacute;rez</title>
+    <meta name="description" content="Protocolos m&eacute;dico est&eacute;ticos integrales para rejuvenecer, armonizar y mejorar la calidad de tu piel de forma natural. Dra. Paola P&eacute;rez en Santa Marta.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#B8860B',
+                        'accent-light': '#D4A843',
+                        'accent-dark': '#8B6508',
+                        cream: '#FFFDF7',
+                        'warm-gray': '#F7F5F0',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-logo bg-transparent">
+            <img src="images/logo.png" alt="Dra. Paola P&eacute;rez" class="h-24">
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-28">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Dra. Paola P&eacute;rez - Medicina Est&eacute;tica Facial" class="h-24">
+                </a>
+                <div class="hidden lg:flex items-center gap-10">
+                    <a href="index.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Inicio</a>
+                    <a href="rostro-glow.html" class="nav-link active text-xs font-medium text-gray-900 uppercase tracking-[0.15em]">Rostro Glow</a>
+                    <a href="glowface.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">GlowFace</a>
+                    <a href="glow-gummies.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Glow Gummies</a>
+                    <a href="contacto.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Contacto</a>
+                </div>
+                <button id="menu-toggle" class="lg:hidden p-2 text-gray-600 hover:text-gray-900" aria-label="Abrir men&uacute;">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div class="border-b border-gray-100"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-0 z-50 bg-white lg:hidden">
+        <div class="flex items-center justify-between px-6 h-20">
+            <span class="text-lg font-serif font-semibold text-gray-900">Men&uacute;</span>
+            <button id="menu-close" class="p-2 text-gray-600 hover:text-gray-900" aria-label="Cerrar men&uacute;">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col px-6 pt-8 gap-6">
+            <a href="index.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Inicio</a>
+            <a href="rostro-glow.html" class="text-xl font-medium text-accent">Rostro Glow</a>
+            <a href="glowface.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">GlowFace</a>
+            <a href="glow-gummies.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Glow Gummies</a>
+            <a href="contacto.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero with Image -->
+    <section class="relative pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F5EFE0] via-[#F0E8D4] to-[#EDE4CC]"></div>
+        <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-accent/8 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl"></div>
+        <div class="relative grid lg:grid-cols-[1fr_45%] items-center min-h-[calc(100vh-5rem)]">
+            <div class="px-6 lg:px-0 lg:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] py-20 lg:py-32 fade-in-left">
+                <div class="max-w-2xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="line-gold"></div>
+                        <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Rostro Glow</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-gray-900 leading-tight mb-6">
+                        Protocolos m&eacute;dico est&eacute;ticos para un rostro <span class="italic text-gradient">naturalmente renovado</span>
+                    </h1>
+                    <p class="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
+                        Rejuvenecer, armonizar y mejorar la calidad de tu piel de forma natural. Evaluamos tu expresi&oacute;n, tu piel y tus h&aacute;bitos para construir un resultado completo.
+                    </p>
+                </div>
+            </div>
+            <div class="relative hidden lg:block h-full fade-in-right">
+                <img src="images/rostro-glow-hero.png"
+                     alt="Tratamiento m&eacute;dico est&eacute;tico facial profesional"
+                     class="w-full h-full object-cover"
+                     data-fallback="true"
+                     loading="eager">
+                <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#F0E8D4] to-transparent"></div>
+            </div>
+        </div>
+        <!-- Curved separator -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="white"></path></svg>
+        </div>
+    </section>
+
+    <!-- Differentiator -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-stretch">
+                <div class="fade-in-left flex flex-col justify-between">
+                    <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-gray-900 leading-tight mb-6">
+                        Una sola intervenci&oacute;n <span class="italic text-gradient">rara vez resuelve todo</span>
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed text-lg mb-8">
+                        Por eso evaluamos tu expresi&oacute;n, tu piel y tus h&aacute;bitos para construir un resultado m&aacute;s completo. Nuestros protocolos integran m&uacute;ltiples t&eacute;cnicas en un plan coherente y personalizado.
+                    </p>
+                    <div class="bg-warm-gray rounded-2xl p-8 mb-6">
+                        <h3 class="font-semibold text-gray-900 mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-accent"></i>
+                            Ideal para ti si:
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accent text-sm mt-1.5"></i>
+                                <span>Notas l&iacute;neas de expresi&oacute;n marcadas</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accent text-sm mt-1.5"></i>
+                                <span>Tu piel luce opaca o cansada</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-accent text-sm mt-1.5"></i>
+                                <span>Quieres verte mejor sin perder naturalidad</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-900 rounded-2xl p-8 text-white">
+                        <h3 class="font-semibold mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-circle-xmark text-red-400"></i>
+                            No es para ti si:
+                        </h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-xmark text-red-400 text-sm mt-1.5"></i>
+                                <span>Buscas un cambio exagerado o artificial</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-xmark text-red-400 text-sm mt-1.5"></i>
+                                <span>Esperas resultados que no respeten tus rasgos naturales</span>
+                            </li>
+                        </ul>
+                        <div class="border-t border-gray-700 mt-6 pt-6">
+                            <p class="text-gray-400 text-sm">
+                                Nuestra filosof&iacute;a es clara: realzar tu belleza natural, nunca transformarte en alguien diferente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in-right img-reveal rounded-2xl overflow-hidden">
+                    <img src="images/hero-doctora-gomitas.png"
+                         alt="Dra. Paola P&eacute;rez con Glow Gummies"
+                         class="w-full h-full object-cover"
+                         data-fallback="true"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados -->
+    <section class="py-20 bg-warm-gray">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-left">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="line-gold"></div>
+                        <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Resultados</span>
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-gray-900 leading-tight mb-6">
+                        &iquest;Qu&eacute; puedes lograr con un <span class="italic text-gradient">Protocolo Rostro Glow</span>?
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed text-lg mb-8">
+                        Cada protocolo se personaliza seg&uacute;n tu caso, pero en general buscamos:
+                    </p>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                            </div>
+                            <span>Suavizar l&iacute;neas de expresi&oacute;n</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                            </div>
+                            <span>Mejorar la calidad y textura de la piel</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                            </div>
+                            <span>Hidratar profundamente los labios</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                            </div>
+                            <span>Estimular m&uacute;sculos y tejidos faciales</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                            </div>
+                            <span>Prevenir o tratar flacidez</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                            </div>
+                            <span>Armonizar rasgos sin perder naturalidad</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                            </div>
+                            <span>Apoyar tu piel desde adentro con nutrici&oacute;n funcional</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fade-in-right">
+                    <div class="bg-white rounded-2xl p-10 shadow-sm border border-accent/10">
+                        <div class="w-14 h-14 rounded-full gradient-gold flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-sparkles text-white text-xl"></i>
+                        </div>
+                        <blockquote class="text-xl lg:text-2xl font-serif italic text-gray-700 leading-relaxed">
+                            &ldquo;Un Rostro Glow no es un rostro cambiado. Es un rostro que se ve m&aacute;s descansado, m&aacute;s sano y m&aacute;s seguro de s&iacute; mismo.&rdquo;
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protocols -->
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <div class="line-gold"></div>
+                    <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Protocolos</span>
+                    <div class="line-gold"></div>
+                </div>
+                <h2 class="text-3xl lg:text-5xl font-serif font-semibold text-gray-900 leading-tight mb-4">
+                    Cuatro protocolos, un solo <span class="italic text-gradient">objetivo</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Cada protocolo incluye una combinaci&oacute;n integral de tratamientos adaptados a tus necesidades espec&iacute;ficas.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 stagger-children">
+                <!-- Protocol 1 -->
+                <div class="protocol-card bg-white rounded-2xl overflow-hidden fade-in">
+                    <div class="h-44 overflow-hidden">
+                        <img src="images/bioestimulacion-colageno.png"
+                             alt="Protocolo Esencial de tratamiento facial"
+                             class="w-full h-full object-cover"
+                             data-fallback="true"
+                             loading="lazy">
+                    </div>
+                    <div class="p-8 lg:p-10">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="inline-block text-[11px] tracking-[0.2em] uppercase font-semibold text-accent bg-accent/10 px-3 py-1 rounded-full">Base</span>
+                            <span class="text-sm text-gray-400 font-medium">01</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">Protocolo Esencial</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            La base de todo Rostro Glow. Un protocolo completo que combina las t&eacute;cnicas fundamentales para rejuvenecer y mejorar la calidad de tu piel.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Toxina botul&iacute;nica</span>
+                                    <p class="text-gray-500 mt-0.5">Relajaci&oacute;n de l&iacute;neas de expresi&oacute;n</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Glow Cleaning</span>
+                                    <p class="text-gray-500 mt-0.5">Limpieza facial m&eacute;dica profesional</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Glow Naturalift</span>
+                                    <p class="text-gray-500 mt-0.5">Lifting sin agujas con radiofrecuencia y microcorrientes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Glow Hidralips</span>
+                                    <p class="text-gray-500 mt-0.5">Alta hidrataci&oacute;n de labios</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Glow Gummies</span>
+                                    <p class="text-gray-500 mt-0.5">Nutrici&oacute;n funcional complementaria</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protocol 2 -->
+                <div class="protocol-card featured bg-white rounded-2xl fade-in">
+                    <div class="absolute -top-3 left-8 inline-block gradient-gold text-white text-[10px] tracking-[0.15em] uppercase font-bold px-4 py-1 rounded-full z-10">Recomendado</div>
+                    <div class="h-44 overflow-hidden relative rounded-t-2xl">
+                        <img src="images/protocolo-colageno.png"
+                             alt="Protocolo Col&aacute;geno bioestimulaci&oacute;n"
+                             class="w-full h-full object-cover"
+                             data-fallback="true"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-white/30 to-transparent"></div>
+                    </div>
+                    <div class="p-8 lg:p-10">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="inline-block text-[11px] tracking-[0.2em] uppercase font-semibold text-accent bg-accent/10 px-3 py-1 rounded-full">Avanzado</span>
+                            <span class="text-sm text-gray-400 font-medium">02</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">Protocolo Col&aacute;geno</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Todo lo del Protocolo Esencial m&aacute;s bioestimulaci&oacute;n avanzada para activar la producci&oacute;n natural de col&aacute;geno y devolver firmeza a tu piel.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Todo el Protocolo Esencial</span>
+                                    <p class="text-gray-500 mt-0.5">Base completa de tratamientos</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full gradient-gold flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-plus text-white text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Bioestimulaci&oacute;n con Sculptra / Radiesse</span>
+                                    <p class="text-gray-500 mt-0.5">Estimulaci&oacute;n natural de col&aacute;geno para firmeza y estructura</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protocol 3 -->
+                <div class="protocol-card bg-white rounded-2xl overflow-hidden fade-in">
+                    <div class="h-44 overflow-hidden">
+                        <img src="images/protocolo-armonizacion.png"
+                             alt="Protocolo Armonizaci&oacute;n facial"
+                             class="w-full h-full object-cover"
+                             data-fallback="true"
+                             loading="lazy">
+                    </div>
+                    <div class="p-8 lg:p-10">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="inline-block text-[11px] tracking-[0.2em] uppercase font-semibold text-accent bg-accent/10 px-3 py-1 rounded-full">Especializado</span>
+                            <span class="text-sm text-gray-400 font-medium">03</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">Protocolo Armonizaci&oacute;n</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Todo lo del Protocolo Esencial m&aacute;s &aacute;cido hialur&oacute;nico estrat&eacute;gico para devolver volumen y equilibrio a las proporciones de tu rostro.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Todo el Protocolo Esencial</span>
+                                    <p class="text-gray-500 mt-0.5">Base completa de tratamientos</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full gradient-gold flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-plus text-white text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">&Aacute;cido hialur&oacute;nico estrat&eacute;gico</span>
+                                    <p class="text-gray-500 mt-0.5">Volumen sutil y armon&iacute;a facial personalizada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protocol 4 -->
+                <div class="protocol-card bg-white rounded-2xl overflow-hidden fade-in">
+                    <div class="h-44 overflow-hidden">
+                        <img src="images/protocolo-endolifting.png"
+                             alt="Protocolo Endolifting tecnolog&iacute;a avanzada"
+                             class="w-full h-full object-cover"
+                             data-fallback="true"
+                             loading="lazy">
+                    </div>
+                    <div class="p-8 lg:p-10">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="inline-block text-[11px] tracking-[0.2em] uppercase font-semibold text-accent bg-accent/10 px-3 py-1 rounded-full">Premium</span>
+                            <span class="text-sm text-gray-400 font-medium">04</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">Protocolo Endolifting</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Todo lo del Protocolo Esencial m&aacute;s endolifting, la tecnolog&iacute;a avanzada para tratar la flacidez facial de forma no quir&uacute;rgica.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-accent text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Todo el Protocolo Esencial</span>
+                                    <p class="text-gray-500 mt-0.5">Base completa de tratamientos</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <div class="w-6 h-6 rounded-full gradient-gold flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-plus text-white text-[10px]"></i>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-900">Endolifting</span>
+                                    <p class="text-gray-500 mt-0.5">Tratamiento avanzado para flacidez facial sin cirug&iacute;a</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferencial -->
+    <section class="py-20 bg-warm-gray">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-gray-900 leading-tight mb-4">
+                    &iquest;Por qu&eacute; elegir Rostro Glow y no un <span class="italic text-gradient">tratamiento aislado</span>?
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Porque una sola intervenci&oacute;n rara vez resuelve todo lo que est&aacute; pasando en el rostro.
+                </p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto stagger-children">
+                <div class="bg-white rounded-2xl p-8 shadow-sm fade-in">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-eye text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Visi&oacute;n m&eacute;dica integral</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Evaluamos tu expresi&oacute;n, tu piel, tus h&aacute;bitos y tus necesidades para construir un resultado completo.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm fade-in">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-user-doctor text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Protocolos propios</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Dise&ntilde;ados por la Dra. Paola P&eacute;rez combinando medicina est&eacute;tica, cuidado facial y nutrici&oacute;n interna.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm fade-in">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-leaf text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Resultados naturales</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">El enfoque es la autoestima, el bienestar y la armon&iacute;a facial. Nunca transformarte en alguien diferente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <div class="line-gold"></div>
+                    <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Testimonios</span>
+                    <div class="line-gold"></div>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-gray-900 leading-tight">
+                    Resultados que se ven... <span class="italic text-gradient">y se sienten</span>
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 stagger-children">
+                <div class="bg-warm-gray rounded-2xl p-8 fade-in">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed italic mb-4">
+                        &ldquo;Yo no quer&iacute;a cambiar mi cara, solo dejar de verme tan cansada. Con Rostro Glow sent&iacute; que volv&iacute; a verme como yo, pero mucho m&aacute;s descansada.&rdquo;
+                    </blockquote>
+                    <p class="text-gray-500 text-sm font-medium">Paciente de Rostro Glow</p>
+                </div>
+                <div class="bg-warm-gray rounded-2xl p-8 fade-in">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed italic mb-4">
+                        &ldquo;Lo que m&aacute;s me gust&oacute; fue que no me ve&iacute;a exagerada. Mi piel se ve&iacute;a m&aacute;s linda, m&aacute;s cuidada y mi expresi&oacute;n mucho m&aacute;s suave.&rdquo;
+                    </blockquote>
+                    <p class="text-gray-500 text-sm font-medium">Paciente de Rostro Glow</p>
+                </div>
+                <div class="bg-warm-gray rounded-2xl p-8 fade-in">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                        <i class="fa-solid fa-star text-accent text-sm"></i>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed italic mb-4">
+                        &ldquo;Pens&eacute; que solo necesitaba toxina, pero entend&iacute; que mi rostro necesitaba algo mucho m&aacute;s completo. Ese fue el cambio.&rdquo;
+                    </blockquote>
+                    <p class="text-gray-500 text-sm font-medium">Paciente de Rostro Glow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-warm-gray">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-gray-900 leading-tight mb-4">
+                    Preguntas frecuentes sobre <span class="italic text-gradient">Rostro Glow</span>
+                </h2>
+            </div>
+            <div class="space-y-4 fade-in">
+                <details class="bg-white rounded-2xl p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-semibold text-gray-900">&iquest;Todos los protocolos requieren valoraci&oacute;n?</span>
+                        <i class="fa-solid fa-chevron-down text-accent text-sm transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">S&iacute;. La valoraci&oacute;n m&eacute;dica es el primer paso para definir cu&aacute;l de los protocolos es m&aacute;s adecuado seg&uacute;n tu rostro, tu piel y tus objetivos.</p>
+                </details>
+                <details class="bg-white rounded-2xl p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-semibold text-gray-900">&iquest;Puedo hacerme Rostro Glow si nunca me he hecho nada?</span>
+                        <i class="fa-solid fa-chevron-down text-accent text-sm transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">S&iacute;. De hecho, muchos pacientes comienzan con Rostro Glow porque permite hacer un abordaje m&aacute;s completo y bien guiado desde el inicio.</p>
+                </details>
+                <details class="bg-white rounded-2xl p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-semibold text-gray-900">&iquest;Me voy a ver artificial?</span>
+                        <i class="fa-solid fa-chevron-down text-accent text-sm transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">No. La filosof&iacute;a de la Dra. Paola P&eacute;rez es trabajar resultados naturales, elegantes y personalizados. Siempre respetando tu esencia.</p>
+                </details>
+                <details class="bg-white rounded-2xl p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-semibold text-gray-900">&iquest;Cu&aacute;l protocolo es mejor para m&iacute;?</span>
+                        <i class="fa-solid fa-chevron-down text-accent text-sm transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">Eso depende de tu principal necesidad: l&iacute;neas de expresi&oacute;n, flacidez, calidad de piel o armonizaci&oacute;n de rasgos. En la valoraci&oacute;n lo definimos juntas.</p>
+                </details>
+                <details class="bg-white rounded-2xl p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-semibold text-gray-900">&iquest;Qu&eacute; diferencia hay entre Rostro Glow y GlowFace?</span>
+                        <i class="fa-solid fa-chevron-down text-accent text-sm transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">Rostro Glow pertenece a la l&iacute;nea m&eacute;dico est&eacute;tica e integra inyectables y tratamientos complementarios. GlowFace es la l&iacute;nea 100% natural, sin inyectables.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/cta-fondo-clinica.png"
+                 alt=""
+                 class="w-full h-full object-cover"
+                 data-fallback="true"
+                 loading="lazy">
+            <div class="absolute inset-0 bg-gray-900/85"></div>
+        </div>
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-80 h-80 bg-accent rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center py-24 lg:py-32 fade-in">
+            <h2 class="text-3xl lg:text-5xl font-serif font-semibold text-white leading-tight mb-6">
+                Descubre cu&aacute;l protocolo es <span class="italic text-accent-light">ideal para ti</span>
+            </h2>
+            <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+                En una valoraci&oacute;n personalizada, la Dra. Paola P&eacute;rez evaluar&aacute; tu rostro y te recomendar&aacute; el protocolo que mejor se adapte a tus necesidades.
+            </p>
+            <a href="contacto.html" class="inline-flex items-center gap-3 gradient-gold text-white font-medium px-10 py-4 rounded-full hover:shadow-lg hover:shadow-accent/30 transition-all text-lg">
+                <i class="fa-regular fa-calendar"></i>
+                Agendar Valoraci&oacute;n
+            </a>
+            <p class="text-gray-500 text-sm mt-6">Valoraci&oacute;n: $50.000 COP (descontable de tu tratamiento)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <img src="images/logon.png" alt="Dra. Paola P&eacute;rez - Medicina Est&eacute;tica Facial" class="h-32">
+                    </div>
+                    <p class="text-gray-500 leading-relaxed max-w-sm mb-6">
+                        Especialista en medicina est&eacute;tica facial con enfoque natural, integral y personalizado. M&aacute;s de 14 a&ntilde;os de experiencia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Navegaci&oacute;n</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-accent transition-colors text-sm">Inicio</a></li>
+                        <li><a href="rostro-glow.html" class="hover:text-accent transition-colors text-sm">Rostro Glow</a></li>
+                        <li><a href="glowface.html" class="hover:text-accent transition-colors text-sm">GlowFace</a></li>
+                        <li><a href="glow-gummies.html" class="hover:text-accent transition-colors text-sm">Glow Gummies</a></li>
+                        <li><a href="contacto.html" class="hover:text-accent transition-colors text-sm">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2 text-sm"><i class="fa-solid fa-location-dot text-accent mt-1"></i><span>Cl. 20 #12-12, Consultorio 1B,<br>Santa Marta, Magdalena</span></li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fa-solid fa-phone text-accent"></i><a href="tel:+573014047426" class="hover:text-accent transition-colors">301 404 7426 - 324 360 9051</a></li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fa-solid fa-envelope text-accent"></i><a href="mailto:drapaolaperezo@gmail.com" class="hover:text-accent transition-colors">drapaolaperezo@gmail.com</a></li>
+                    </ul>
+                    <div class="flex items-center gap-4 mt-6">
+                        <a href="https://www.instagram.com/drapaolaperezo/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-instagram text-white"></i>
+                        </a>
+                        <a href="https://www.facebook.com/drapaolaperezo" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="https://wa.me/573126223385" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-whatsapp text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-600">
+                <p>&copy; 2026 &mdash; Todos los derechos reservados | <a href="https://santamartacrea.com" class="hover:text-accent transition-colors">santa marta crea</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573126223385" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-accent rounded-full flex items-center justify-center shadow-lg hover:bg-accent-dark transition-colors hover:scale-110 transform wa-pulse" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

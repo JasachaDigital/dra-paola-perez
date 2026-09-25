@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Valoraci&oacute;n | Dra. Paola P&eacute;rez - Medicina Est&eacute;tica Facial</title>
+    <meta name="description" content="Agenda tu valoraci&oacute;n con la Dra. Paola P&eacute;rez. Medicina est&eacute;tica facial en Santa Marta. Valoraci&oacute;n por $50.000 COP descontable de tu tratamiento.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#B8860B',
+                        'accent-light': '#D4A843',
+                        'accent-dark': '#8B6508',
+                        cream: '#FFFDF7',
+                        'warm-gray': '#F7F5F0',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-logo bg-transparent">
+            <img src="images/logo.png" alt="Dra. Paola P&eacute;rez" class="h-24">
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-28">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Dra. Paola P&eacute;rez - Medicina Est&eacute;tica Facial" class="h-24">
+                </a>
+                <div class="hidden lg:flex items-center gap-10">
+                    <a href="index.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Inicio</a>
+                    <a href="rostro-glow.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Rostro Glow</a>
+                    <a href="glowface.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">GlowFace</a>
+                    <a href="glow-gummies.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Glow Gummies</a>
+                    <a href="contacto.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Contacto</a>
+                </div>
+                <button id="menu-toggle" class="lg:hidden p-2 text-gray-600 hover:text-gray-900" aria-label="Abrir men&uacute;">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div class="border-b border-gray-100"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-0 z-50 bg-white lg:hidden">
+        <div class="flex items-center justify-between px-6 h-20">
+            <span class="text-lg font-serif font-semibold text-gray-900">Men&uacute;</span>
+            <button id="menu-close" class="p-2 text-gray-600 hover:text-gray-900" aria-label="Cerrar men&uacute;">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col px-6 pt-8 gap-6">
+            <a href="index.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Inicio</a>
+            <a href="rostro-glow.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Rostro Glow</a>
+            <a href="glowface.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">GlowFace</a>
+            <a href="glow-gummies.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Glow Gummies</a>
+            <a href="contacto.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero with Image -->
+    <section class="relative pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F5EFE0] via-[#F0E8D4] to-[#EDE4CC]"></div>
+        <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-accent/8 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl"></div>
+        <div class="relative grid lg:grid-cols-[1fr_45%] items-center min-h-[calc(100vh-5rem)]">
+            <div class="px-6 lg:px-0 lg:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] py-20 lg:py-32 fade-in-left">
+                <div class="max-w-2xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="line-gold"></div>
+                        <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Agendar Valoraci&oacute;n</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-gray-900 leading-tight mb-6">
+                        Tu rostro no necesita adivinanzas. Necesita una <span class="italic text-gradient">valoraci&oacute;n profesional</span>
+                    </h1>
+                    <p class="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
+                        El primer paso hacia tu Rostro Glow es una evaluaci&oacute;n personalizada donde definimos juntas el camino ideal para ti.
+                    </p>
+                </div>
+            </div>
+            <div class="relative hidden lg:block h-full fade-in-right">
+                <img src="images/consulta-medica.png"
+                     alt="Consultorio m&eacute;dico est&eacute;tico profesional"
+                     class="w-full h-full object-cover"
+                     data-fallback="true"
+                     loading="eager">
+                <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#F0E8D4] to-transparent"></div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="white"></path></svg>
+        </div>
+    </section>
+
+    <!-- Objections -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto stagger-children">
+                <div class="bg-warm-gray rounded-2xl p-8 fade-in">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-question text-accent"></i>
+                        </div>
+                        <div>
+                            <p class="font-serif italic text-gray-700 text-lg mb-3">&ldquo;No s&eacute; si necesito agujas o no&rdquo;</p>
+                            <p class="text-gray-600">En la cita definimos tu mejor ruta. Evaluamos tu piel, tus preferencias y tus objetivos para recomendarte el camino ideal, con o sin inyectables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-warm-gray rounded-2xl p-8 fade-in">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-question text-accent"></i>
+                        </div>
+                        <div>
+                            <p class="font-serif italic text-gray-700 text-lg mb-3">&ldquo;Quiero hacer algo pero no s&eacute; por d&oacute;nde empezar&rdquo;</p>
+                            <p class="text-gray-600">Esa es exactamente la raz&oacute;n de valorar primero. La Dra. Paola te gu&iacute;a paso a paso desde la primera consulta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form + Contact Info -->
+    <section class="py-24 lg:py-32 bg-warm-gray">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-5 gap-12 items-stretch">
+                <!-- Form -->
+                <div class="lg:col-span-3 fade-in-left flex">
+                    <div class="bg-white rounded-2xl p-8 lg:p-10 shadow-sm flex flex-col w-full">
+                        <h2 class="text-2xl font-serif font-semibold text-gray-900 mb-2">Solicita tu valoraci&oacute;n</h2>
+                        <p class="text-gray-500 mb-8">Completa el formulario y nos pondremos en contacto contigo para confirmar tu cita.</p>
+
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 transition-all">
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Correo electr&oacute;nico</label>
+                                    <input type="email" id="email" name="email" required placeholder="tu@email.com" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 transition-all">
+                                </div>
+                                <div>
+                                    <label for="telefono" class="block text-sm font-medium text-gray-700 mb-2">Tel&eacute;fono</label>
+                                    <input type="tel" id="telefono" name="telefono" required placeholder="300 000 0000" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="servicio" class="block text-sm font-medium text-gray-700 mb-2">Servicio de inter&eacute;s</label>
+                                <select id="servicio" name="servicio" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 transition-all appearance-none bg-white">
+                                    <option value="" disabled selected>Selecciona un servicio</option>
+                                    <option value="rostro-glow">Rostro Glow (M&eacute;dico Est&eacute;tico)</option>
+                                    <option value="glowface">GlowFace (100% Natural)</option>
+                                    <option value="glow-gummies">Glow Gummies (Nutrici&oacute;n)</option>
+                                    <option value="valoracion">Valoraci&oacute;n General</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-2">Mensaje <span class="text-gray-400 font-normal">(opcional)</span></label>
+                                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cu&eacute;ntanos brevemente qu&eacute; te gustar&iacute;a mejorar o cualquier duda que tengas..." class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 transition-all resize-none"></textarea>
+                            </div>
+
+                            <div class="bg-accent/5 border border-accent/20 rounded-xl p-4 flex items-start gap-3">
+                                <i class="fa-solid fa-circle-info text-accent mt-0.5"></i>
+                                <p class="text-sm text-gray-600">
+                                    <strong class="text-gray-900">Valoraci&oacute;n: $50.000 COP</strong> &mdash; Este valor es descontable del tratamiento que decidas realizar.
+                                </p>
+                            </div>
+
+                            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 gradient-gold text-white font-medium py-4 rounded-full hover:shadow-lg hover:shadow-accent/30 transition-all text-lg">
+                                <i class="fa-regular fa-calendar"></i>
+                                Solicitar Valoraci&oacute;n
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="form-success" class="hidden text-center py-12">
+                            <div class="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
+                                <i class="fa-solid fa-check text-green-600 text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-3">Solicitud enviada</h3>
+                            <p class="text-gray-600 max-w-md mx-auto">Hemos recibido tu solicitud. Nos pondremos en contacto contigo pronto para confirmar tu cita.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="lg:col-span-2 fade-in-right flex">
+                    <div class="space-y-6 flex flex-col w-full">
+                        <!-- Image accent -->
+                        <div class="img-reveal rounded-2xl overflow-hidden hidden lg:block">
+                            <img src="images/medicina-estetica-equipos.png"
+                                 alt="Ambiente profesional de consulta m&eacute;dica"
+                                 class="w-full h-48 object-cover"
+                                 data-fallback="true"
+                                 loading="lazy">
+                        </div>
+
+                        <!-- Contact Card -->
+                        <div class="bg-white rounded-2xl p-8 shadow-sm">
+                            <h3 class="text-lg font-serif font-semibold text-gray-900 mb-6">Informaci&oacute;n de contacto</h3>
+                            <div class="space-y-5">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-location-dot text-accent text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-medium text-gray-900">Direcci&oacute;n</span>
+                                        <p class="text-gray-600 text-sm mt-0.5">Unidad M&eacute;dica Odontol&oacute;gica<br>Cl. 20 #12-12, Consultorio 1B<br>Santa Marta, Magdalena</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-phone text-accent text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-medium text-gray-900">Tel&eacute;fonos</span>
+                                        <p class="text-sm mt-0.5"><a href="tel:+573014047426" class="text-gray-600 hover:text-accent transition-colors">301 404 7426 - 324 360 9051</a></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-envelope text-accent text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-medium text-gray-900">Correo</span>
+                                        <p class="text-sm mt-0.5"><a href="mailto:drapaolaperezo@gmail.com" class="text-gray-600 hover:text-accent transition-colors">drapaolaperezo@gmail.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social -->
+                        <div class="bg-white rounded-2xl p-8 shadow-sm flex-1">
+                            <h3 class="text-lg font-serif font-semibold text-gray-900 mb-6">S&iacute;guenos</h3>
+                            <div class="space-y-3">
+                                <a href="https://www.instagram.com/drapaolaperezo/" target="_blank" rel="noopener" class="flex items-center gap-4 p-3 rounded-xl hover:bg-warm-gray transition-colors group">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 flex items-center justify-center">
+                                        <i class="fa-brands fa-instagram text-white"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-medium text-gray-900 group-hover:text-accent transition-colors">Instagram</span>
+                                        <p class="text-xs text-gray-500">@drapaolaperezo</p>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs ml-auto group-hover:text-accent transition-colors"></i>
+                                </a>
+                                <a href="https://www.facebook.com/drapaolaperezo" target="_blank" rel="noopener" class="flex items-center gap-4 p-3 rounded-xl hover:bg-warm-gray transition-colors group">
+                                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
+                                        <i class="fa-brands fa-facebook-f text-white"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-medium text-gray-900 group-hover:text-accent transition-colors">Facebook</span>
+                                        <p class="text-xs text-gray-500">Dra. Paola P&eacute;rez</p>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs ml-auto group-hover:text-accent transition-colors"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-0">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 pb-24">
+            <div class="fade-in">
+                <h2 class="text-2xl font-serif font-semibold text-gray-900 mb-6">Enc&uacute;entranos</h2>
+                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200" style="height: 400px;">
+                    <iframe src="https://maps.google.com/maps?q=Dra%20Paola%20Perez%20Santa%20Marta&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicaci&oacute;n de la Dra. Paola P&eacute;rez"></iframe>
+                </div>
+                <div class="mt-4 flex items-center gap-2 text-sm text-gray-500">
+                    <i class="fa-solid fa-location-dot text-accent"></i>
+                    <span>Unidad M&eacute;dica Odontol&oacute;gica, Cl. 20 #12-12, Consultorio 1B, Santa Marta, Magdalena</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <img src="images/logon.png" alt="Dra. Paola P&eacute;rez - Medicina Est&eacute;tica Facial" class="h-32">
+                    </div>
+                    <p class="text-gray-500 leading-relaxed max-w-sm mb-6">
+                        Especialista en medicina est&eacute;tica facial con enfoque natural, integral y personalizado. M&aacute;s de 14 a&ntilde;os de experiencia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Navegaci&oacute;n</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-accent transition-colors text-sm">Inicio</a></li>
+                        <li><a href="rostro-glow.html" class="hover:text-accent transition-colors text-sm">Rostro Glow</a></li>
+                        <li><a href="glowface.html" class="hover:text-accent transition-colors text-sm">GlowFace</a></li>
+                        <li><a href="glow-gummies.html" class="hover:text-accent transition-colors text-sm">Glow Gummies</a></li>
+                        <li><a href="contacto.html" class="hover:text-accent transition-colors text-sm">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2 text-sm"><i class="fa-solid fa-location-dot text-accent mt-1"></i><span>Cl. 20 #12-12, Consultorio 1B,<br>Santa Marta, Magdalena</span></li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fa-solid fa-phone text-accent"></i><a href="tel:+573014047426" class="hover:text-accent transition-colors">301 404 7426 - 324 360 9051</a></li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fa-solid fa-envelope text-accent"></i><a href="mailto:drapaolaperezo@gmail.com" class="hover:text-accent transition-colors">drapaolaperezo@gmail.com</a></li>
+                    </ul>
+                    <div class="flex items-center gap-4 mt-6">
+                        <a href="https://www.instagram.com/drapaolaperezo/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-instagram text-white"></i>
+                        </a>
+                        <a href="https://www.facebook.com/drapaolaperezo" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="https://wa.me/573126223385" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-whatsapp text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-600">
+                <p>&copy; 2026 &mdash; Todos los derechos reservados | <a href="https://santamartacrea.com" class="hover:text-accent transition-colors">santa marta crea</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573126223385" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-accent rounded-full flex items-center justify-center shadow-lg hover:bg-accent-dark transition-colors hover:scale-110 transform wa-pulse" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Form handling (specific to this page)
+        const form = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const servicio = document.getElementById('servicio').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const servicioNames = {
+                'rostro-glow': 'Rostro Glow',
+                'glowface': 'GlowFace',
+                'glow-gummies': 'Glow Gummies',
+                'valoracion': 'Valoraci\u00f3n General'
+            };
+
+            const whatsappMsg = `Hola, soy ${nombre}. Me gustar\u00eda agendar una valoraci\u00f3n.\n\nServicio de inter\u00e9s: ${servicioNames[servicio] || servicio}\nEmail: ${email}\nTel\u00e9fono: ${telefono}${mensaje ? '\nMensaje: ' + mensaje : ''}`;
+
+            const whatsappUrl = `https://wa.me/573126223385?text=${encodeURIComponent(whatsappMsg)}`;
+
+            form.classList.add('hidden');
+            formSuccess.classList.remove('hidden');
+
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

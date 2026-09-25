@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Gummies - Nutrici&oacute;n Funcional | Dra. Paola P&eacute;rez</title>
+    <meta name="description" content="Nutrici&oacute;n funcional para apoyar tu piel, bienestar y Rostro Glow desde adentro. Glow Body y Glow Skin de la Dra. Paola P&eacute;rez.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#B8860B',
+                        'accent-light': '#D4A843',
+                        'accent-dark': '#8B6508',
+                        cream: '#FFFDF7',
+                        'warm-gray': '#F7F5F0',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-logo bg-transparent">
+            <img src="images/logo.png" alt="Dra. Paola P&eacute;rez" class="h-24">
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-28">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Dra. Paola P&eacute;rez - Medicina Est&eacute;tica Facial" class="h-24">
+                </a>
+                <div class="hidden lg:flex items-center gap-10">
+                    <a href="index.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Inicio</a>
+                    <a href="rostro-glow.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Rostro Glow</a>
+                    <a href="glowface.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">GlowFace</a>
+                    <a href="glow-gummies.html" class="nav-link active text-xs font-medium text-gray-900 uppercase tracking-[0.15em]">Glow Gummies</a>
+                    <a href="contacto.html" class="nav-link text-xs font-medium text-gray-600 hover:text-gray-900 uppercase tracking-[0.15em]">Contacto</a>
+                </div>
+                <button id="menu-toggle" class="lg:hidden p-2 text-gray-600 hover:text-gray-900" aria-label="Abrir men&uacute;">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div class="border-b border-gray-100"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-0 z-50 bg-white lg:hidden">
+        <div class="flex items-center justify-between px-6 h-20">
+            <span class="text-lg font-serif font-semibold text-gray-900">Men&uacute;</span>
+            <button id="menu-close" class="p-2 text-gray-600 hover:text-gray-900" aria-label="Cerrar men&uacute;">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col px-6 pt-8 gap-6">
+            <a href="index.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Inicio</a>
+            <a href="rostro-glow.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Rostro Glow</a>
+            <a href="glowface.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">GlowFace</a>
+            <a href="glow-gummies.html" class="text-xl font-medium text-accent">Glow Gummies</a>
+            <a href="contacto.html" class="text-xl font-medium text-gray-700 hover:text-accent transition-colors">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero with Image -->
+    <section class="relative pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F5EFE0] via-[#F0E8D4] to-[#EDE4CC]"></div>
+        <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-accent/8 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl"></div>
+        <div class="relative grid lg:grid-cols-[1fr_45%] items-center min-h-[calc(100vh-5rem)]">
+            <div class="px-6 lg:px-0 lg:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] py-20 lg:py-32 fade-in-left">
+                <div class="max-w-2xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="line-gold"></div>
+                        <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Nutrici&oacute;n Interior</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-gray-900 leading-tight mb-6">
+                        Nutrici&oacute;n funcional para tu <span class="italic text-gradient">Rostro Glow</span> desde adentro
+                    </h1>
+                    <p class="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
+                        Tu Rostro Glow tambi&eacute;n empieza en lo que tu cuerpo recibe cada d&iacute;a. Apoya la digesti&oacute;n, reduce la inflamaci&oacute;n y fortalece cabello y u&ntilde;as.
+                    </p>
+                </div>
+            </div>
+            <div class="relative hidden lg:block h-full fade-in-right">
+                <img src="images/glow-gummies-hero.png"
+                     alt="Suplementos nutricionales naturales para la piel"
+                     class="w-full h-full object-cover"
+                     data-fallback="true"
+                     loading="eager">
+                <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#F0E8D4] to-transparent"></div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="white"></path></svg>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <div class="line-gold"></div>
+                    <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Productos</span>
+                    <div class="line-gold"></div>
+                </div>
+                <h2 class="text-3xl lg:text-5xl font-serif font-semibold text-gray-900 leading-tight mb-4">
+                    Dos f&oacute;rmulas, un <span class="italic text-gradient">objetivo integral</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Complementos nutricionales dise&ntilde;ados para apoyar tu piel, tu bienestar y potenciar los resultados de cualquier tratamiento facial.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto stagger-children">
+                <!-- Glow Body -->
+                <div class="card-hover bg-warm-gray rounded-2xl overflow-hidden border border-gray-100 fade-in flex flex-col">
+                    <div class="h-52 overflow-hidden">
+                        <img src="images/glow-body.jpg"
+                             alt="Ingredientes naturales para bienestar digestivo"
+                             class="w-full h-full object-cover"
+                             data-fallback="true"
+                             loading="lazy">
+                    </div>
+                    <div class="gradient-gold p-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-white/80 text-xs tracking-[0.2em] uppercase font-medium">Bienestar Interior</span>
+                                <h3 class="text-2xl font-serif font-semibold text-white mt-1">Glow Body</h3>
+                            </div>
+                            <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
+                                <i class="fa-solid fa-seedling text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Bienestar digestivo y metab&oacute;lico. Dise&ntilde;ado para apoyar tu sistema digestivo, reducir la inflamaci&oacute;n y promover un metabolismo saludable.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Ingredientes clave</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">Vinagre de manzana</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">Ch&iacute;a</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">Flor de jamaica</span>
+                            </div>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-gray-200">
+                            <a href="https://wa.me/573126223385?text=Hola%2C%20me%20interesa%20Glow%20Body" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 w-full bg-accent text-white font-medium px-8 py-4 rounded-full hover:bg-accent-dark transition-colors">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Glow Skin -->
+                <div class="card-hover bg-warm-gray rounded-2xl overflow-hidden border border-gray-100 fade-in flex flex-col">
+                    <div class="h-52 overflow-hidden">
+                        <img src="images/glow-skin.png"
+                             alt="Suplemento col&aacute;geno para firmeza de piel"
+                             class="w-full h-full object-cover"
+                             data-fallback="true"
+                             loading="lazy">
+                    </div>
+                    <div class="bg-gray-900 p-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-gray-400 text-xs tracking-[0.2em] uppercase font-medium">Firmeza y Belleza</span>
+                                <h3 class="text-2xl font-serif font-semibold text-white mt-1">Glow Skin</h3>
+                            </div>
+                            <div class="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center">
+                                <i class="fa-solid fa-gem text-accent-light text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Firmeza de piel, cabello y u&ntilde;as. Formulado para estimular la producci&oacute;n de col&aacute;geno y fortalecer desde adentro las estructuras que definen tu belleza.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Ingredientes clave</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">Col&aacute;geno</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">Biotina</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">Calcio</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">Zinc</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">&Aacute;cido f&oacute;lico</span>
+                                <span class="bg-white px-3 py-1.5 rounded-full text-sm text-gray-700 border border-gray-200">Vitaminas del complejo B</span>
+                            </div>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-gray-200">
+                            <a href="https://wa.me/573126223385?text=Hola%2C%20me%20interesa%20Glow%20Skin" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 w-full bg-accent text-white font-medium px-8 py-4 rounded-full hover:bg-accent-dark transition-colors">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Consultar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continuity Programs -->
+    <section class="py-24 lg:py-32 bg-warm-gray">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <div class="line-gold"></div>
+                    <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Programas</span>
+                    <div class="line-gold"></div>
+                </div>
+                <h2 class="text-3xl lg:text-5xl font-serif font-semibold text-gray-900 leading-tight mb-4">
+                    Programa de <span class="italic text-gradient">continuidad</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Los mejores resultados se logran con constancia. Un solo programa que combina Glow Body y Glow Skin para acompa&ntilde;arte cada d&iacute;a.
+                </p>
+            </div>
+
+            <div class="max-w-5xl mx-auto fade-in">
+                <!-- Programa Glow SkinBody -->
+                <div class="bg-gray-900 rounded-3xl overflow-hidden card-hover grid md:grid-cols-2 relative">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="relative h-64 md:h-auto overflow-hidden">
+                        <img src="images/glow-gummies-hero.png"
+                             alt="Programa Glow SkinBody"
+                             class="w-full h-full object-cover"
+                             data-fallback="true"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+                    </div>
+                    <div class="relative p-10 lg:p-12 text-white flex flex-col justify-center">
+                        <div class="inline-block gradient-gold text-white text-[10px] tracking-[0.15em] uppercase font-bold px-4 py-1.5 rounded-full mb-5 self-start">Mejor valor</div>
+                        <h3 class="text-3xl lg:text-4xl font-serif font-semibold mb-4">Programa Glow SkinBody</h3>
+                        <p class="text-gray-300 leading-relaxed mb-6">30 d&iacute;as con Glow Body + Glow Skin. El combo completo para resultados desde adentro.</p>
+                        <div class="flex items-center gap-3 mb-8 pb-8 border-b border-white/10">
+                            <i class="fa-solid fa-heart text-accent-light"></i>
+                            <p class="text-green-400 font-medium">Glow Body + Glow Skin Bienestar en forma de coraz&oacute;n.</p>
+                        </div>
+                        <a href="https://www.glowgummies.co" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 gradient-gold text-white font-medium px-8 py-4 rounded-full hover:shadow-lg hover:shadow-accent/30 transition-all">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            Tienda en L&iacute;nea
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 fade-in">
+            <div class="text-center">
+                <div class="w-16 h-16 rounded-full gradient-gold flex items-center justify-center mx-auto mb-8">
+                    <i class="fa-solid fa-quote-right text-white text-xl"></i>
+                </div>
+                <blockquote class="text-2xl lg:text-3xl font-serif italic text-gray-700 leading-relaxed mb-8">
+                    &ldquo;Me encant&oacute; Glow Body porque empec&eacute; a sentirme menos inflamada y eso tambi&eacute;n se not&oacute; en mi rostro.&rdquo;
+                </blockquote>
+                <div class="flex items-center justify-center gap-1 mb-3">
+                    <i class="fa-solid fa-star text-accent text-sm"></i>
+                    <i class="fa-solid fa-star text-accent text-sm"></i>
+                    <i class="fa-solid fa-star text-accent text-sm"></i>
+                    <i class="fa-solid fa-star text-accent text-sm"></i>
+                    <i class="fa-solid fa-star text-accent text-sm"></i>
+                </div>
+                <p class="text-gray-500 text-sm">Paciente de Glow Gummies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/cta-fondo-clinica.png"
+                 alt=""
+                 class="w-full h-full object-cover"
+                 data-fallback="true"
+                 loading="lazy">
+            <div class="absolute inset-0 bg-gray-900/85"></div>
+        </div>
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-80 h-80 bg-accent rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center py-24 lg:py-32 fade-in">
+            <h2 class="text-3xl lg:text-5xl font-serif font-semibold text-white leading-tight mb-6">
+                Complementa tu rutina con <span class="italic text-accent-light">nutrici&oacute;n inteligente</span>
+            </h2>
+            <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+                Consulta con la Dra. Paola P&eacute;rez cu&aacute;l es el plan Glow Gummies ideal para potenciar tus resultados.
+            </p>
+            <a href="contacto.html" class="inline-flex items-center gap-3 gradient-gold text-white font-medium px-10 py-4 rounded-full hover:shadow-lg hover:shadow-accent/30 transition-all text-lg">
+                <i class="fa-regular fa-calendar"></i>
+                Agendar Valoraci&oacute;n
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <img src="images/logon.png" alt="Dra. Paola P&eacute;rez - Medicina Est&eacute;tica Facial" class="h-32">
+                    </div>
+                    <p class="text-gray-500 leading-relaxed max-w-sm mb-6">
+                        Especialista en medicina est&eacute;tica facial con enfoque natural, integral y personalizado. M&aacute;s de 14 a&ntilde;os de experiencia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Navegaci&oacute;n</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-accent transition-colors text-sm">Inicio</a></li>
+                        <li><a href="rostro-glow.html" class="hover:text-accent transition-colors text-sm">Rostro Glow</a></li>
+                        <li><a href="glowface.html" class="hover:text-accent transition-colors text-sm">GlowFace</a></li>
+                        <li><a href="glow-gummies.html" class="hover:text-accent transition-colors text-sm">Glow Gummies</a></li>
+                        <li><a href="contacto.html" class="hover:text-accent transition-colors text-sm">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2 text-sm"><i class="fa-solid fa-location-dot text-accent mt-1"></i><span>Cl. 20 #12-12, Consultorio 1B,<br>Santa Marta, Magdalena</span></li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fa-solid fa-phone text-accent"></i><a href="tel:+573014047426" class="hover:text-accent transition-colors">301 404 7426 - 324 360 9051</a></li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fa-solid fa-envelope text-accent"></i><a href="mailto:drapaolaperezo@gmail.com" class="hover:text-accent transition-colors">drapaolaperezo@gmail.com</a></li>
+                    </ul>
+                    <div class="flex items-center gap-4 mt-6">
+                        <a href="https://www.instagram.com/drapaolaperezo/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-instagram text-white"></i>
+                        </a>
+                        <a href="https://www.facebook.com/drapaolaperezo" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="https://wa.me/573126223385" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fa-brands fa-whatsapp text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-600">
+                <p>&copy; 2026 &mdash; Todos los derechos reservados | <a href="https://santamartacrea.com" class="hover:text-accent transition-colors">santa marta crea</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573126223385" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-accent rounded-full flex items-center justify-center shadow-lg hover:bg-accent-dark transition-colors hover:scale-110 transform wa-pulse" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
