@@ -1,0 +1,7 @@
+# Archivos de trabajo que no se publican en la web
+src
+tools
+node_modules
+package.json
+package-lock.json
+tailwind.config.js

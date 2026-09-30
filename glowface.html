@@ -5,42 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlowFace - Tratamientos 100% Naturales | Dra. Paola P&eacute;rez</title>
     <meta name="description" content="La ruta 100% natural para lograr un Rostro Glow sin inyectables. Tratamientos faciales profesionales sin agujas en Santa Marta.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        accent: '#B8860B',
-                        'accent-light': '#D4A843',
-                        'accent-dark': '#8B6508',
-                        cream: '#FFFDF7',
-                        'warm-gray': '#F7F5F0',
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'Georgia', 'serif'],
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="canonical" href="https://dra-paola-perez.vercel.app/glowface.html">
+    <meta name="theme-color" content="#B8860B">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Dra. Paola P&eacute;rez">
+    <meta property="og:title" content="GlowFace - Tratamientos 100% Naturales | Dra. Paola P&eacute;rez">
+    <meta property="og:description" content="La ruta 100% natural para lograr un Rostro Glow sin inyectables. Tratamientos faciales profesionales sin agujas en Santa Marta.">
+    <meta property="og:url" content="https://dra-paola-perez.vercel.app/glowface.html">
+    <meta property="og:image" content="https://dra-paola-perez.vercel.app/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="images/favicon.png" />
 </head>
 <body class="bg-white text-gray-800 antialiased">
-
-    <!-- Preloader -->
-    <div id="preloader" class="preloader">
-        <div class="preloader-logo bg-transparent">
-            <img src="images/logo.png" alt="Dra. Paola P&eacute;rez" class="h-24">
-        </div>
-    </div>
 
     <!-- Scroll Progress -->
     <div id="scroll-progress" class="scroll-progress"></div>
@@ -105,11 +91,11 @@
                 </div>
             </div>
             <div class="relative hidden lg:block h-full fade-in-right">
-                <img src="images/card-glowface.jpg"
+                <img src="images/card-glowface.webp"
                      alt="Tratamiento facial natural y relajante"
                      class="w-full h-full object-cover"
                      data-fallback="true"
-                     loading="eager">
+                     loading="eager" fetchpriority="high">
                 <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#F0E8D4] to-transparent"></div>
             </div>
         </div>
@@ -172,7 +158,7 @@
                     </div>
                 </div>
                 <div class="fade-in-right img-reveal rounded-2xl overflow-hidden">
-                    <img src="images/hero-doctora-gomitas.png"
+                    <img src="images/hero-doctora-gomitas.webp"
                          alt="Dra. Paola P&eacute;rez con Glow Gummies"
                          class="w-full h-full object-cover"
                          data-fallback="true"
@@ -239,7 +225,7 @@
                 <div class="fade-in-right">
                     <div class="bg-white rounded-2xl p-10 shadow-sm border border-accent/10">
                         <div class="w-14 h-14 rounded-full gradient-gold flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-sparkles text-white text-xl"></i>
+                            <i class="fa-solid fa-wand-magic-sparkles text-white text-xl"></i>
                         </div>
                         <blockquote class="text-xl lg:text-2xl font-serif italic text-gray-700 leading-relaxed">
                             &ldquo;GlowFace no promete exageraci&oacute;n. Promete constancia, cuidado y un rostro que se vea mejor con el tiempo.&rdquo;
@@ -271,7 +257,7 @@
                 <!-- Treatment 1 -->
                 <div class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/glow-cleaning.jpg"
+                        <img src="images/glow-cleaning.webp"
                              alt="Limpieza facial profesional Glow Cleaning"
                              class="w-full h-full object-cover"
                              data-fallback="true"
@@ -299,7 +285,7 @@
                 <!-- Treatment 2 -->
                 <div class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/glow-naturalift.jpg"
+                        <img src="images/glow-naturalift.webp"
                              alt="Tratamiento Glow Naturalift radiofrecuencia"
                              class="w-full h-full object-cover"
                              data-fallback="true"
@@ -327,7 +313,7 @@
                 <!-- Treatment 3 -->
                 <div class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/glow-hidralips.jpg"
+                        <img src="images/glow-hidralips.webp"
                              alt="Tratamiento Glow Hidralips labios"
                              class="w-full h-full object-cover"
                              data-fallback="true"
@@ -373,7 +359,7 @@
                 <!-- Sesi&oacute;n GlowFace -->
                 <div class="bg-warm-gray rounded-2xl overflow-hidden border-2 border-transparent hover:border-accent transition-colors fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/resultado-tratamiento.png"
+                        <img src="images/resultado-tratamiento.webp"
                              alt="Sesi&oacute;n GlowFace experiencia completa"
                              class="w-full h-full object-cover"
                              data-fallback="true"
@@ -407,7 +393,7 @@
                 <!-- Protocolo Anual -->
                 <div class="bg-gray-900 rounded-2xl overflow-hidden text-white relative fade-in">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="images/resultado-natural.png"
+                        <img src="images/resultado-natural.webp"
                              alt="Protocolo anual GlowFace mantenimiento"
                              class="w-full h-full object-cover opacity-40"
                              data-fallback="true"
@@ -465,7 +451,7 @@
     <!-- CTA -->
     <section class="relative overflow-hidden">
         <div class="absolute inset-0">
-            <img src="images/cta-fondo-clinica.png"
+            <img src="images/cta-fondo-clinica.webp"
                  alt=""
                  class="w-full h-full object-cover"
                  data-fallback="true"

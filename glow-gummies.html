@@ -5,42 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glow Gummies - Nutrici&oacute;n Funcional | Dra. Paola P&eacute;rez</title>
     <meta name="description" content="Nutrici&oacute;n funcional para apoyar tu piel, bienestar y Rostro Glow desde adentro. Glow Body y Glow Skin de la Dra. Paola P&eacute;rez.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        accent: '#B8860B',
-                        'accent-light': '#D4A843',
-                        'accent-dark': '#8B6508',
-                        cream: '#FFFDF7',
-                        'warm-gray': '#F7F5F0',
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'Georgia', 'serif'],
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="canonical" href="https://dra-paola-perez.vercel.app/glow-gummies.html">
+    <meta name="theme-color" content="#B8860B">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Dra. Paola P&eacute;rez">
+    <meta property="og:title" content="Glow Gummies - Nutrici&oacute;n Funcional | Dra. Paola P&eacute;rez">
+    <meta property="og:description" content="Nutrici&oacute;n funcional para apoyar tu piel, bienestar y Rostro Glow desde adentro. Glow Body y Glow Skin de la Dra. Paola P&eacute;rez.">
+    <meta property="og:url" content="https://dra-paola-perez.vercel.app/glow-gummies.html">
+    <meta property="og:image" content="https://dra-paola-perez.vercel.app/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="images/favicon.png" />
 </head>
 <body class="bg-white text-gray-800 antialiased">
-
-    <!-- Preloader -->
-    <div id="preloader" class="preloader">
-        <div class="preloader-logo bg-transparent">
-            <img src="images/logo.png" alt="Dra. Paola P&eacute;rez" class="h-24">
-        </div>
-    </div>
 
     <!-- Scroll Progress -->
     <div id="scroll-progress" class="scroll-progress"></div>
@@ -105,11 +91,11 @@
                 </div>
             </div>
             <div class="relative hidden lg:block h-full fade-in-right">
-                <img src="images/glow-gummies-hero.png"
+                <img src="images/glow-gummies-hero.webp"
                      alt="Suplementos nutricionales naturales para la piel"
                      class="w-full h-full object-cover"
                      data-fallback="true"
-                     loading="eager">
+                     loading="eager" fetchpriority="high">
                 <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#F0E8D4] to-transparent"></div>
             </div>
         </div>
@@ -139,7 +125,7 @@
                 <!-- Glow Body -->
                 <div class="card-hover bg-warm-gray rounded-2xl overflow-hidden border border-gray-100 fade-in flex flex-col">
                     <div class="h-52 overflow-hidden">
-                        <img src="images/glow-body.jpg"
+                        <img src="images/glow-body.webp"
                              alt="Ingredientes naturales para bienestar digestivo"
                              class="w-full h-full object-cover"
                              data-fallback="true"
@@ -180,7 +166,7 @@
                 <!-- Glow Skin -->
                 <div class="card-hover bg-warm-gray rounded-2xl overflow-hidden border border-gray-100 fade-in flex flex-col">
                     <div class="h-52 overflow-hidden">
-                        <img src="images/glow-skin.png"
+                        <img src="images/glow-skin.webp"
                              alt="Suplemento col&aacute;geno para firmeza de piel"
                              class="w-full h-full object-cover"
                              data-fallback="true"
@@ -246,7 +232,7 @@
                 <div class="bg-gray-900 rounded-3xl overflow-hidden card-hover grid md:grid-cols-2 relative">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
                     <div class="relative h-64 md:h-auto overflow-hidden">
-                        <img src="images/glow-gummies-hero.png"
+                        <img src="images/glow-gummies-hero.webp"
                              alt="Programa Glow SkinBody"
                              class="w-full h-full object-cover"
                              data-fallback="true"
@@ -296,7 +282,7 @@
     <!-- CTA -->
     <section class="relative overflow-hidden">
         <div class="absolute inset-0">
-            <img src="images/cta-fondo-clinica.png"
+            <img src="images/cta-fondo-clinica.webp"
                  alt=""
                  class="w-full h-full object-cover"
                  data-fallback="true"

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dra-paola-perez.vercel.app/sitemap.xml

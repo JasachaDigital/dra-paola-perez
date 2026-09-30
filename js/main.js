@@ -5,16 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Preloader ---
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        window.addEventListener('load', () => {
-            setTimeout(() => preloader.classList.add('hidden'), 400);
-        });
-        // Fallback: hide after 2s
-        setTimeout(() => preloader.classList.add('hidden'), 2000);
-    }
-
     // --- Mobile Menu ---
     const menuToggle = document.getElementById('menu-toggle');
     const menuClose = document.getElementById('menu-close');

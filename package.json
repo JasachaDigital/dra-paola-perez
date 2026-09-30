@@ -1,0 +1,14 @@
+{
+  "name": "dra-paola-perez",
+  "private": true,
+  "description": "Sitio web Dra. Paola Pérez - Medicina Estética Facial",
+  "scripts": {
+    "css": "tailwindcss -i src/tailwind.css -o css/tailwind.css --minify",
+    "css:watch": "tailwindcss -i src/tailwind.css -o css/tailwind.css --watch",
+    "images": "node tools/optimize-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.19"
+  }
+}
